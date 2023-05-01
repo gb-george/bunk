@@ -1,0 +1,35 @@
+.info-area {
+  padding: 1rem;
+  border: 1px solid rgb(223, 223, 223);
+  margin-bottom: 2rem;
+  height: 500px;
+  max-height: 500px;
+  overflow: hidden;
+  display: block;
+}
+
+::ng-deep .mat-toolbar {
+  background-color: #ddeafd;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(249, 216, 255, 0.2);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-gif {
+  width: 100%;
+  height: 100%;
+  transform: scale(0.3);
+  background-image: url("../assets/gifs/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}

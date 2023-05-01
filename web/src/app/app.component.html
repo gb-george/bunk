@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <div class="" fxLayout="row" fxLayoutAlign="center center">
+        The Bunk team are all going on a work holiday but they need an app to keep a
+        track of expenses and who owes money to who at the end of the trip.
+    </div>
+</mat-toolbar>
+<div class="d-flex justify-content-center align-items-center">
+    <add-user-expense></add-user-expense>
+</div>
+<div class="container mb-5 mt-5">
+    <div class="info-area">
+        <div class="row">
+            <div class="col">
+                <bunk-expenses-table></bunk-expenses-table>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <bunk-payouts></bunk-payouts>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="loading" class="loading-overlay">
+    <div class="loading-gif"></div>
+</div>

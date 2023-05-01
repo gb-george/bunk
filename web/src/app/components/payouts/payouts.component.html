@@ -1,0 +1,22 @@
+<bunk-settle-up (payoutsArrEmit)="setPayoutsArr($event)"></bunk-settle-up>
+
+<div class="table-container">
+  <pre *ngIf="!payoutsArr || payoutsArr.length == 0">
+    &#123;
+        "total": ???,
+        "equalShare": ???,
+        "payouts": [
+            &#123;
+                "owes": "????????",
+                "owed": "????",
+                "amount": ???
+            &#125;
+        ]
+    &#125;
+  </pre>
+  <div *ngIf="payoutsArr">
+    <pre>
+      {{payoutsArr | json }}
+    </pre>
+  </div>
+</div>

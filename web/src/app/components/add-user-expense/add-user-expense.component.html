@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center">
+  <form [formGroup]="expenseForm" class=" justify-content-between">
+    <mat-form-field class="mx-2">
+      <input matInput type="text" formControlName="name" placeholder="Name" />
+    </mat-form-field>
+    <mat-form-field class="mx-2">
+      <input matInput type="number" formControlName="expense" placeholder="Expense" />
+    </mat-form-field>
+    <button type="button" mat-raised-button color="primary" [disabled]="!expenseForm.valid" (click)="addExpense()"
+      class="mx-2">Add
+      Expense</button>
+    <button type="button" mat-raised-button color="warn" [disabled]="!expenseForm.valid"
+      (click)="clearForm()">Clear</button>
+  </form>
+</div>
